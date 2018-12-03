@@ -1,10 +1,14 @@
-version: 0.1
+version: 0.2
    
 phases:
   install:
     commands:
-      - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist bundler
+      - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist
+      - bundle install
   build:
     commands:
       - echo "******** Building Jekyll site ********"
-      - bundle exec jekyll build
+      - jekyll build
+artifacts:
+  files: "**/*"
+  base-directory: _site
