@@ -5,8 +5,8 @@ description: "Thomas Wygonik's website and projects"
 baseurl: ""
 url: ""
 title_description: "I’m a jack of all trades in IT. I have experience in networking, systems adminstration, and cloud computing. My current job combines all of these aspects. This site is a collection of my random projects."
-title_image: "https://www.gravatar.com/avatar/28309b7ab26f245ed1e9df632db0266b"
-google_analytics: 
+title_image: "https://www.gravatar.com/avatar/28309b7ab26f245ed1e9df632db0266b?s=500&d=mm"
+google_analytics: "UA-132482895-1"
 github_repository: https://github.com/twaluigi
 post_limit: 5
 
@@ -22,8 +22,8 @@ xing_link:
 facebook_link:
 
 # Footer
-footer_left: "Theme made by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+#footer_left: "Theme made by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
+footer_right: "Copyright &copy; Thomas Wygonik 2019"
 
 # Build settings
 markdown: kramdown
@@ -33,4 +33,6 @@ kramdown:
   syntax_highlighter: rouge
 
 permalink: pretty
-exclude: [vendor]
+
+timezone: America/New_York
+exclude: [vendor, TODO]
