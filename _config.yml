@@ -3,7 +3,7 @@ title: "Thomas Wygonik"
 email: thomas.wygonik@gmail.com
 description: "Thomas Wygonik's Blog"
 baseurl: ""
-url: ""
+url: "https://thomaswygonik.com"
 title_description: "I’m a jack of all trades in IT. I have experience in networking, systems adminstration, and cloud computing. My current job combines all of these aspects. This site is a collection of my random projects."
 title_image: "https://www.gravatar.com/avatar/28309b7ab26f245ed1e9df632db0266b?s=500&d=mm"
 google_analytics: "UA-132482895-1"
@@ -11,15 +11,15 @@ github_repository: https://github.com/twaluigi
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: 
-github_username:  twaluigi
-instagram_username: 
-reddit_username: 
-linkedin_link: 
-google_plus_link: 
-stackoverflow_link: 
-xing_link:
-facebook_link:
+# twitter_username:
+github_username: twaluigi
+#instagram_username:
+#reddit_username:
+#linkedin_link:
+#google_plus_link:
+#stackoverflow_link:
+#xing_link:
+#facebook_link:
 
 # Footer
 #footer_left: "Theme made by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
