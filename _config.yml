@@ -22,7 +22,8 @@ github_username: twaluigi
 #facebook_link:
 
 # Footer
-#footer_left: "Theme made by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
+footer_left: "Theme made by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
+footer_center: "TEST TEST TEST"
 footer_right: "Copyright &copy; Thomas Wygonik 2019"
 
 # Build settings
