@@ -36,4 +36,4 @@ kramdown:
 permalink: pretty
 
 timezone: America/New_York
-exclude: [vendor, TODO]
+exclude: [vendor, TODO, buildspec.yml, README.md, LICENSE]
