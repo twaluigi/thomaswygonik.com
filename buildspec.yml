@@ -9,4 +9,4 @@ phases:
       - echo "******** Building Jekyll site ********"
       - jekyll build
       - echo "******** Uploading to S3 *******"
-      - aws s3 sync --delete --exclude "buildspec.yml" --exclude "README.md" --exclude "LICENSE" _site/ s3://thomaswygonik.com
+      - aws s3 sync --delete --exclude "buildspec.yml" --exclude "README.md" --exclude "LICENSE" _site/ s3://$SITE_NAME
