@@ -1,12 +1,7 @@
 ---
 layout:     post
 title:      How I Host this Website
-categories: cloud
-thumbnail: cloud
-tags:
- - cloud
- - AWS
- - jekyll
+
 ---
 
 One of the simplest ways of hosting a website is to spin up a Linux server, install Apache or Nginx, and add the code. Another even simpler way is to use something like [GitHub Pages](https://pages.github.com/) to create a clean blog relatively easily. GitHub Pages allows the use of [Jekyll](https://jekyllrb.com/) to generate the static site.
