@@ -95,7 +95,6 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - README.md
-  - screenshot.png
   - vendor
   - TODO
   - buildspec.yml
