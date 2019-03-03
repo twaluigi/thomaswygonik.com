@@ -1,9 +1,14 @@
 version: 0.2
-   
+
 phases:
+  pre_build:
+    commands:
+      - export LC_ALL="C.UTF-8"
+      - export LANG="en_US.UTF-8"
+      - export LANGUAGE="en_US.UTF-8"
   install:
     commands:
-      - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist
+      - gem install jekyll jekyll-paginate jekyll-sitemap
   build:
     commands:
       - echo "******** Building Jekyll site ********"
