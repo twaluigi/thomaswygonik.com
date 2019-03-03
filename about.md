@@ -5,9 +5,4 @@ permalink: /about/
 tags: about
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
-
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-
+I'm an IT generalist with an interest in AWS, Docker, Infrastructure as Code, and anything else tech. Here I'll post writeups on my projects or whatever cool new thing I've become interested in lately. 
