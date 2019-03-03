@@ -3,7 +3,6 @@ layout:     post
 title:      Receiving Alerts using IFTTT Webhooks
 
 ---
-# Receiving Alerts using IFTTT Webhooks
 I like to use [IFTTT](https://ifttt.com) webhooks to receive notifications from various services on my phone. Normally services can publish alerts and notifications to a webhook, which [IFTTT Webhooks](https://ifttt.com/maker_webhooks) supports. However, you have to format the data in the following way:
 ```JSON
 { "value1" : "STUFF", "value2" : "STUFF", "value3" : "STUFF" }
