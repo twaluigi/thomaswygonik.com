@@ -1,4 +1,1 @@
-![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiZmFXMjUzaUFzZUtFa2lvOXJXUDFuRUdFSDhVUUdiUHNObm9DSWtGaU9FOFFtTnB5QWZENk40R0pOeUJsbFpoY3lEdDFhaklXOHE1cnAxNW5MelgyMVNVPSIsIml2UGFyYW1ldGVyU3BlYyI6InFjR1JsWVpobVlzL3ZGRmwiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
-# thomaswygonik.com
-
-My blog website
+My website written in Jekyll using the Pixyll theme
