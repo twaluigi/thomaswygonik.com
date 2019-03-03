@@ -1,12 +1,7 @@
 ---
 layout:     post
 title:      Monitoring my website and home downtime
-categories: monitoring cloud
-thumbnail: alert
-tags:
- - monitoring
- - cloud
- - python
+
 ---
 
 I was searching for a way to monitor the uptime of my website and alert me if there was any significant downtime. There are solutions like Prometheus which provide highly configurable and scalable alerting and monitoring, but I don't need something so complex right now. I also looked at uptimerobot, but didn't like the features it provided, and configuration seemed clunky.
