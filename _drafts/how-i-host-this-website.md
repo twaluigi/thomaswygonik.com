@@ -4,7 +4,6 @@ title:      How I Host this Website
 
 ---
 
-One of the simplest ways of hosting a website is to spin up a Linux server, install Apache or Nginx, and add the code. Another even simpler way is to use something like [GitHub Pages](https://pages.github.com/) to create a clean blog relatively easily. GitHub Pages allows the use of [Jekyll](https://jekyllrb.com/) to generate the static site.
+One of the simplest ways to host a website, especially one for a blog, is to use a static site generator and hosting with GitHub pages. After looking into it, I decided I'd use of these static site generators to set up my website. There are a few options to choose from, but I settled on [Jekyll](https://jekyllrb.com/). Jekyll provides a simple interface with Ruby and markdown to set up your website.
 
-Another static site hosting solution is AWS S3. S3 makes it easy to upload our site's code and host it. One drawback is lack of https support directly with S3. However, AWS provides the service CloudFront which _does_ have HTTPS support, with the added advantage of distributing our website files around the world.
-
+I wanted to use this as an opportunity to learn more about AWS and hosting, so rather than host this site on GitHub pages, I'm using AWS S3's website hosting feature.
