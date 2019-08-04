@@ -1,0 +1,39 @@
+image: "ruby:2.6.3"
+
+variables:
+  LC_ALL: "C.UTF-8"
+  LANG: "en_US.UTF-8"
+  LANGUAGE: "en_US.UTF-8"
+
+stages:
+  - build
+  - deploy
+
+cache: 
+  paths:
+    - vendor
+
+buildJekyll:
+  stage: build
+  script:
+    - bundle install --path=vendor/
+    - bundle exec jekyll build
+  artifacts:
+    paths: 
+      - _site/
+
+deployS3:
+  stage: deploy
+  image: "python:3.7.4-buster"
+  dependencies: 
+    - buildJekyll
+  before_script:
+    - pip install awscli
+    - apt-get update -y
+    - apt-get install jq -y
+  script:
+    - export CREDS=$(aws sts assume-role --role-arn ${ROLE_ARN} --role-session-name "gitlab-$(date +%Y%m%d%H%M%S)" | jq -r '.Credentials')
+    - export AWS_ACCESS_KEY_ID=$(echo ${CREDS} | jq -r '.AccessKeyId')
+    - export AWS_SECRET_ACCESS_KEY=$(echo ${CREDS} | jq -r '.SecretAccessKey')
+    - export AWS_SESSION_TOKEN=$(echo ${CREDS} | jq -r '.SessionToken')
+    - aws s3 sync --delete _site/ s3://${BUCKET_NAME}/
