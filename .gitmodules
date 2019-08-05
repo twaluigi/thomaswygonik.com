@@ -1,0 +1,3 @@
+[submodule "hugo_site/themes/tale"]
+	path = hugo_site/themes/tale
+	url = https://github.com/EmielH/tale-hugo.git

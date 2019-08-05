@@ -1,0 +1,6 @@
+baseURL = "https://tomwygonik.com"
+languageCode = "en-us"
+title = "Tom Wygonik"
+theme = "tale"
+[Author]
+    name = "Tom Wygonik"

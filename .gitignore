@@ -28,3 +28,4 @@ pkg/
 test/dest
 tmp/*
 start-site.sh
+hugo_site/public
