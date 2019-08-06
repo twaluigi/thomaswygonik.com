@@ -8,4 +8,4 @@ I'm an operations engineer at AWS. I graduated from RIT in 2014 with a degree in
 
 You can view some of my projects at https://github.com/twaluigi
 
-Connec twith me on LinkedIn https://www.linkedin.com/in/thomas-wygonik/
+Connect with me on LinkedIn https://www.linkedin.com/in/thomas-wygonik/
