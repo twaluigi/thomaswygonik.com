@@ -1,5 +1,3 @@
-image: "jojomi/hugo"
-
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
@@ -9,6 +7,7 @@ stages:
 
 buildHugo:
   stage: build
+  image: "jojomi/hugo"
   script:
     - hugo -s hugo_site
   artifacts:
@@ -17,13 +16,9 @@ buildHugo:
 
 deployS3:
   stage: deploy
-  image: "python:3.7.4-buster"
+  image: "registry.gitlab.com/twaluigi/tomwygonik.com/awscli:latest"
   dependencies: 
     - buildHugo
-  before_script:
-    - pip install awscli
-    - apt-get update -y
-    - apt-get install jq -y
   script:
     - export CREDS=$(aws sts assume-role --role-arn ${ROLE_ARN} --role-session-name "gitlab-$(date +%Y%m%d%H%M%S)" | jq -r '.Credentials')
     - export AWS_ACCESS_KEY_ID=$(echo ${CREDS} | jq -r '.AccessKeyId')
