@@ -7,7 +7,7 @@ stages:
 
 buildHugo:
   stage: build
-  image: "jojomi/hugo"
+  image: "registry.gitlab.com/twaluigi/ci-images/hugo:0.56.3"
   script:
     - hugo -s hugo_site
   artifacts:
@@ -16,7 +16,7 @@ buildHugo:
 
 deployS3:
   stage: deploy
-  image: "registry.gitlab.com/twaluigi/tomwygonik.com/awscli:latest"
+  image: "registry.gitlab.com/twaluigi/ci-images/awscli:1.16.218"
   dependencies: 
     - buildHugo
   script:
