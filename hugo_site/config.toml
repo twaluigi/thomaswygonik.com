@@ -4,3 +4,11 @@ title = "Tom Wygonik"
 theme = "tale"
 [Author]
     name = "Tom Wygonik"
+
+[menu]
+    [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        title = "Posts"
+        url = "/posts/"
+        weight = 0
