@@ -11,4 +11,10 @@ theme = "tale"
         name = "Posts"
         title = "Posts"
         url = "/posts/"
+        weight = 1
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        title = "About"
+        url = "/about/"
         weight = 0
