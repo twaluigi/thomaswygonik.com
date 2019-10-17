@@ -6,8 +6,6 @@ stages:
   - deploy
 
 buildHugo:
-  variables:
-    HUGO_VERSION: $HUGO_VERSION
   stage: build
   image: "registry.gitlab.com/twaluigi/ci-images/hugo:$HUGO_VERSION"
   script:
@@ -17,8 +15,6 @@ buildHugo:
       - hugo_site/public/
 
 deployS3:
-  variables:
-    AWSCLI_VERSION: $AWSCLI_VERSION
   stage: deploy
   image: "registry.gitlab.com/twaluigi/ci-images/awscli:$AWSCLI_VERSION"
   dependencies: 
