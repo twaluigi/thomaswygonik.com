@@ -1,5 +1,5 @@
 ---
-title:      "Receiving Alerts using IFTTT Webhooks"
+title: "Receiving Alerts using IFTTT Webhooks"
 date: 2019-03-03
 author: Tom
 ---
